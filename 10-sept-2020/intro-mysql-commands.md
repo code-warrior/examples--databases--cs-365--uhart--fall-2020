@@ -108,7 +108,7 @@ CREATE DATABASE `users` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 ---
 
 ## Creating a Database | Placing Focus
-To work with a database, you need to focus on it. Run `USE` to focus on a database. Let’s focus on the `users` database:
+To work with a database, you need to focus on it by using the `USE` command. Let’s focus on the `users` database:
 
 ```sql
 USE users
@@ -118,8 +118,8 @@ If you now run `STATUS`, you’ll see, below `Connection id:`, `Current database
 
 ---
 
-## Add a User to the Database
-Let’s create a user called `the-user` with password `the-password` who connects with the password `the-password`.
+## Add a User to the Database with a Password
+Let’s create a user called `the-user` whose password is `the-password`.
 
 ```sql
 CREATE USER 'the-user'@'localhost' IDENTIFIED BY 'the-password';
@@ -127,7 +127,7 @@ CREATE USER 'the-user'@'localhost' IDENTIFIED BY 'the-password';
 
 ---
 
-## Give the New User a Password
+## Provide a User Access to the Database
 Let’s now grant `the-user` _all_ privileges to _all_ the tables under the `users` database
 
 ```sql
