@@ -73,6 +73,7 @@ artist.artist_id = track.artist_id;
 ```
 
 ---
+
 ## The `DELETE` Statement
 
 And, we can now verify:
