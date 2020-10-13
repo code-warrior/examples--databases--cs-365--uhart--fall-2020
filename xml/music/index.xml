@@ -10,42 +10,42 @@
   <!ENTITY like "👍🏽">
   <!ENTITY dont-like "👎🏽">
 ]>
-
 <!--The following “processing instruction” indicates the path to the style sheet.-->
 <?xml-stylesheet href="css/style.css"?>
+
 <music_library format="cd">
   <artist name="Mogwai" id="art_1">
     <creates>
       <album name="Every Country’s Sun" id="alb_1">
         <contains>
-           <track name="Coolverine" length="6:17" />
-           <track name="Party in the Dark" length="4:02" />
-           <track name="Brain Sweeties" length="4:44" />
-           <track name="Crossing the Road Material" length="6:58" />
-           <track name="aka 47" length="4:16" />
-           <track name="20 Size" length="4:44" />
-           <track name="1000 Foot Face" length="4:31" />
-           <track name="Don’t Believe the Fife" length="6:24" />
-           <track name="Battered at a Scramble" length="4:03" />
-           <track name="Old Poisons" length="4:30" />
-           <track name="Every Country’s Sun" length="5:38" />
+          <track name="Coolverine" length="6:17" />
+          <track name="Party in the Dark" length="4:02" />
+          <track name="Brain Sweeties" length="4:44" />
+          <track name="Crossing the Road Material" length="6:58" />
+          <track name="aka 47" length="4:16" />
+          <track name="20 Size" length="4:44" />
+          <track name="1000 Foot Face" length="4:31" />
+          <track name="Don’t Believe the Fife" length="6:24" />
+          <track name="Battered at a Scramble" length="4:03" />
+          <track name="Old Poisons" length="4:30" />
+          <track name="Every Country’s Sun" length="5:38" />
         </contains>
       </album>
-       <album name="Every Country’s Sun" id="alb_2">
-          <contains>
-             <track name="Coolverine" length="6:17" />
-             <track name="Party in the Dark" length="4:02" />
-             <track name="Brain Sweeties" length="4:44" />
-             <track name="Crossing the Road Material" length="6:58" />
-             <track name="aka 47" length="4:16" />
-             <track name="20 Size" length="4:44" />
-             <track name="1000 Foot Face" length="4:31" />
-             <track name="Don’t Believe the Fife" length="6:24" />
-             <track name="Battered at a Scramble" length="4:03" />
-             <track name="Old Poisons" length="4:30" />
-             <track name="Every Country’s Sun" length="5:38" />
-          </contains>
-       </album>
+      <album name="Every Country’s Sun" id="alb_2">
+        <contains>
+          <track name="Coolverine" length="6:17" />
+          <track name="Party in the Dark" length="4:02" />
+          <track name="Brain Sweeties" length="4:44" />
+          <track name="Crossing the Road Material" length="6:58" />
+          <track name="aka 47" length="4:16" />
+          <track name="20 Size" length="4:44" />
+          <track name="1000 Foot Face" length="4:31" />
+          <track name="Don’t Believe the Fife" length="6:24" />
+          <track name="Battered at a Scramble" length="4:03" />
+          <track name="Old Poisons" length="4:30" />
+          <track name="Every Country’s Sun" length="5:38" />
+        </contains>
+      </album>
     </creates>
     <comment>I truly &like; this band.</comment>
   </artist>
