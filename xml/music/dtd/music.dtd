@@ -7,14 +7,14 @@
   <!ATTLIST artist id ID #REQUIRED
     name CDATA #REQUIRED>
 
-<!ELEMENT creates (album)+>
+<!ELEMENT creates (album+)>
 <!ELEMENT comment (#PCDATA)>
 
-<!ELEMENT album (contains)*>
+<!ELEMENT album (contains*)>
   <!ATTLIST album id ID #REQUIRED
     name CDATA #REQUIRED>
 
-<!ELEMENT contains (track)+>
+<!ELEMENT contains (track+)>
 <!ELEMENT track EMPTY>
   <!ATTLIST track name CDATA #REQUIRED
    length CDATA #REQUIRED>
