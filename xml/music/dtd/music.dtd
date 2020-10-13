@@ -1,0 +1,20 @@
+<!ELEMENT music_library (artist+)>
+  <!ATTLIST music_library
+    format (cd|vinyl|digital) #REQUIRED>
+
+<!ELEMENT artist (creates|comment)*>
+  <!-- The id must always begin with a letter or underscore. -->
+  <!ATTLIST artist id ID #REQUIRED
+    name CDATA #REQUIRED>
+
+<!ELEMENT creates (album)+>
+<!ELEMENT comment (#PCDATA)>
+
+<!ELEMENT album (contains)*>
+  <!ATTLIST album id ID #REQUIRED
+    name CDATA #REQUIRED>
+
+<!ELEMENT contains (track)+>
+<!ELEMENT track EMPTY>
+  <!ATTLIST track name CDATA #REQUIRED
+   length CDATA #REQUIRED>
