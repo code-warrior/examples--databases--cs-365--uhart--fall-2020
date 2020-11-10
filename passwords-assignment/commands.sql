@@ -47,9 +47,6 @@ SELECT AES_DECRYPT(password, @key_str, @init_vector) AS 'Unciphered' FROM user W
 -- Get the password for PETA’s web site.
 SELECT domain, AES_DECRYPT(password, @key_str, @init_vector) AS 'Unciphered' FROM user WHERE user_id = 1 AND domain = 'peta.org';
 
--- Get the password for PETA’s web site.
-SELECT domain, AES_DECRYPT(password, @key_str, @init_vector) AS 'Unciphered' FROM user WHERE user_id = 1 AND domain = 'peta.org';
-
 -- Get the SSL too
 SELECT web_site.sslayer, user.domain, AES_DECRYPT(password, @key_str, @init_vector) AS 'Unciphered'
 FROM web_site INNER JOIN user
