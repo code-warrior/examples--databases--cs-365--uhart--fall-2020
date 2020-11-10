@@ -8,3 +8,4 @@ source _variables.sql
 source _encryption-settings.sql
 source _create-tables.sql
 source _populate-tables.sql
+source commands.sql
