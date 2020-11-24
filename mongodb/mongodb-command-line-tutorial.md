@@ -26,3 +26,12 @@ brew services start mongodb-community@4.4
 ```
 
 ---
+
+## Connecting to MongoDB
+With the service started, you can now work with Mongo. Instantiate a new command line window and type:
+
+```
+mongo
+```
+
+---
