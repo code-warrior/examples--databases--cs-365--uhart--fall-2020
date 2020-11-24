@@ -35,3 +35,8 @@ mongo
 ```
 
 ---
+
+## Exiting
+Type `CNTRL + C` or `exit` to get out.
+
+---
