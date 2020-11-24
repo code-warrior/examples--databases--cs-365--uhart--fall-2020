@@ -40,3 +40,20 @@ mongo
 Type `CNTRL + C` or `exit` to get out.
 
 ---
+
+## Stopping the Service
+To stop the service, first get the process ID (`pid`) by running `top`, then search for “`mongod`”:
+
+```bash
+top | grep mongod
+```
+
+Now, kill the process by interrupting it with the `-2` flag.
+
+```bash
+kill -2 <PROCESS_ID>
+```
+
+If you now try running MongoDB (via the `mongo` command), it shouldn’t work.
+
+---
