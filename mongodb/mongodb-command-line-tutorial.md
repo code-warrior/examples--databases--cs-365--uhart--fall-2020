@@ -7,22 +7,36 @@ Fall 2020
 ## Starting the MongoDB Service
 Like MySQL, MongoDB requires a server to run in order for users to work with MongoDB databases. We’ll refer to it as a service, and, it’s possible to start the MongoDB service bare or with a configuration file. For a bare start, simply run:
 
+---
+
+## Starting the MongoDB Service
+For a bare start, simply run:
+
 ```bash
 mongod
 ```
 
+---
+
+## Starting the MongoDB Service
 To start the service with a configuration file, use the `--config` flag (or its shortcut, `-f`). **Note**: The following is a macOS-specific path:
 
 ```bash
 mongod --config /usr/local/etc/mongod.conf
 ```
 
+---
+
+## Starting the MongoDB Service
 The shortcut is:
 
 ```bash
 mongod -f /usr/local/etc/mongod.conf
 ```
 
+---
+
+## Starting the MongoDB Service
 You can also start the service as a Brew in macOS:
 
 ```bash
@@ -38,6 +52,9 @@ To stop the service, first get the process ID (`pid`) by running `top`, then sea
 top | grep mongod
 ```
 
+---
+
+## Stopping the Service
 Now, kill the process by interrupting it with the `-2` flag.
 
 ```bash
