@@ -104,3 +104,18 @@ db.getName()
 **Note**: If you’re focused on a database that has no data, the database won’t show up when you type `show dbs`.
 
 ---
+
+## Get Help on the Database
+You can get general help with Mongo:
+
+```bash
+db.help()
+```
+
+You can also get help specific to your database. For example, let’s look at the help files associated with the `test` database:
+
+```bash
+db.test.help()
+```
+
+---
