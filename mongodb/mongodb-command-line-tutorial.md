@@ -61,8 +61,6 @@ Now, kill the process by interrupting it with the `-2` flag.
 kill -2 <PROCESS_ID>
 ```
 
-If you now try running MongoDB (via the `mongo` command), it shouldn’t work.
-
 ---
 
 ## Exiting
