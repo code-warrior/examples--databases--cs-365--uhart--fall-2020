@@ -156,3 +156,28 @@ use music
 ```
 
 ---
+
+## Create a New Collection
+Use the `createCollection` function to create a collection. Let’s create an `artist` collection in our `music` database:
+
+```bash
+db.createCollection(`artist`)
+```
+
+**Note**: You may use dashes in the name of a collection, but you’ll need a slightly different syntax to work with the collection. This will be discussed further in a later section.
+
+---
+
+## Create a New Collection
+If a collection with the same name already exists, you’ll be presented with something akin to the following
+
+```json
+{
+   "ok" : 0,
+   "errmsg" : "a collection 'music.artist' already exists",
+   "code" : 48,
+   "codeName" : "NamespaceExists"
+}
+```
+
+---
