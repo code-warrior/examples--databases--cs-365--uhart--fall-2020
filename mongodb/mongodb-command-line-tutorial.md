@@ -137,6 +137,9 @@ You can get general help with Mongo:
 db.help()
 ```
 
+---
+
+## Get Help on the Database
 You can also get help specific to your database. For example, let’s look at the help files associated with the `test` database:
 
 ```bash
