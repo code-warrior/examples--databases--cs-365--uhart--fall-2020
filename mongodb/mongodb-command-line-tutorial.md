@@ -147,3 +147,12 @@ db.test.help()
 ```
 
 ---
+
+## Create a Database
+Creating a new database is as simple as saying, `use <DATABASE>`, where `<DATABASE>` is the database you’d like to create. Running the `use` command will also switch into that database; that is, it will place focus on the database. Let’s create a database called `music`:
+
+```bash
+use music
+```
+
+---
