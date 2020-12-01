@@ -117,6 +117,9 @@ To see which database Mongo is currently in, type:
 db
 ```
 
+---
+
+## Show the Database I’m Currently Focused On
 You can also list the current database with a longer command:
 
 ```bash
