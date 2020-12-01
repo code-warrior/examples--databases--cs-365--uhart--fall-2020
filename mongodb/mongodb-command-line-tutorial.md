@@ -99,6 +99,9 @@ show databases
 
 **Note**: A semicolon is _not_ required to terminate the MongoDB command.
 
+---
+
+## Show Databases
 A shorter version is also available:
 
 ```bash
