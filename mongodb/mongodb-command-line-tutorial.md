@@ -87,3 +87,20 @@ show dbs
 ```
 
 ---
+
+## Show the Database I’m Currently Focused On
+To see which database Mongo is currently in, type:
+
+```bash
+db
+```
+
+You can also list the current database with a longer command:
+
+```bash
+db.getName()
+```
+
+**Note**: If you’re focused on a database that has no data, the database won’t show up when you type `show dbs`.
+
+---
