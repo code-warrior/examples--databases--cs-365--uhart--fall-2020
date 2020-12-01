@@ -5,7 +5,7 @@ Fall 2020
 ---
 
 ## Starting the MongoDB Service
-Like MySQL, MongoDB requires a server to run in order for users to work with MongoDB databases. We’ll refer to it as a service, and, it’s possible to start the MongoDB service bare or with a configuration file. For a bare start, simply run:
+Like MySQL, MongoDB requires a server to run in order for users to work with MongoDB databases. We’ll refer to it as a service, and, it’s possible to start the MongoDB service bare or with a configuration file.
 
 ---
 
