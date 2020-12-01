@@ -27,20 +27,6 @@ brew services start mongodb-community@4.4
 
 ---
 
-## Connecting to MongoDB
-With the service started, you can now work with Mongo. Instantiate a new command line window and type:
-
-```
-mongo
-```
-
----
-
-## Exiting
-Type `CNTRL + C` or `exit` to get out.
-
----
-
 ## Stopping the Service
 To stop the service, first get the process ID (`pid`) by running `top`, then search for “`mongod`”:
 
@@ -58,6 +44,11 @@ If you now try running MongoDB (via the `mongo` command), it shouldn’t work.
 
 ---
 
+## Exiting
+Type `CNTRL + C` or `exit` to get out.
+
+---
+
 ## Clear the Screen
 ```bash
 CNTL + L
@@ -67,6 +58,15 @@ or
 
 ```bash
 cls
+```
+
+---
+
+## Connecting to MongoDB
+With the service started, you can now work with Mongo. Instantiate a new command line window and type:
+
+```
+mongo
 ```
 
 ---
