@@ -70,3 +70,20 @@ mongo
 ```
 
 ---
+
+## Show Databases
+Like MySQL, you can use `show databases;` to list your databases:
+
+```bash
+show databases
+```
+
+**Note**: A semicolon is _not_ required to terminate the MongoDB command.
+
+A shorter version is also available:
+
+```bash
+show dbs
+```
+
+---
