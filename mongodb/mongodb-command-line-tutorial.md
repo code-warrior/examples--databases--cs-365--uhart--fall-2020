@@ -181,3 +181,12 @@ If a collection with the same name already exists, you’ll be presented with so
 ```
 
 ---
+
+## Verify Collection Creation
+Verify that the collection was built:
+
+```bash
+show collections
+```
+
+---
