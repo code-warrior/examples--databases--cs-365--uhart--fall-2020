@@ -93,7 +93,7 @@ mongo
 ## Show Databases
 Like MySQL, you can use `show databases;` to list your databases:
 
-```bash
+```js
 show databases
 ```
 
@@ -104,7 +104,7 @@ show databases
 ## Show Databases
 A shorter version is also available:
 
-```bash
+```js
 show dbs
 ```
 
@@ -113,7 +113,7 @@ show dbs
 ## Show the Database I’m Currently Focused On
 To see which database Mongo is currently in, type:
 
-```bash
+```js
 db
 ```
 
@@ -122,7 +122,7 @@ db
 ## Show the Database I’m Currently Focused On
 You can also list the current database with a longer command:
 
-```bash
+```js
 db.getName()
 ```
 
@@ -133,7 +133,7 @@ db.getName()
 ## Get Help on the Database
 You can get general help with Mongo:
 
-```bash
+```js
 db.help()
 ```
 
@@ -142,7 +142,7 @@ db.help()
 ## Get Help on the Database
 You can also get help specific to your database. For example, let’s look at the help files associated with the `test` database:
 
-```bash
+```js
 db.test.help()
 ```
 
@@ -151,7 +151,7 @@ db.test.help()
 ## Create a Database
 Creating a new database is as simple as saying, `use <DATABASE>`, where `<DATABASE>` is the database you’d like to create. Running the `use` command will also switch into that database; that is, it will place focus on the database. Let’s create a database called `music`:
 
-```bash
+```js
 use music
 ```
 
@@ -160,7 +160,7 @@ use music
 ## Create a New Collection
 Use the `createCollection` function to create a collection. Let’s create an `artist` collection in our `music` database:
 
-```bash
+```js
 db.createCollection(`artist`)
 ```
 
@@ -185,7 +185,7 @@ If a collection with the same name already exists, you’ll be presented with so
 ## Verify Collection Creation
 Verify that the collection was built:
 
-```bash
+```js
 show collections
 ```
 
