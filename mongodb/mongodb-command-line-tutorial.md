@@ -1,3 +1,5 @@
+slidenumbers: true
+
 # MongoDB Command Line Tutorial
 Principles of Database (CS 365)
 Fall 2020
