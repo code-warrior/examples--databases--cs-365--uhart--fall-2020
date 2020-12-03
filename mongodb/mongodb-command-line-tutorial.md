@@ -374,7 +374,7 @@ db.artist.find()
 ## Retrieve All Rows in a Collection Using `pretty`
 
 ```bash
-db.customers.find().pretty()
+db.artist.find().pretty()
 ```
 
 ---
