@@ -192,3 +192,12 @@ show collections
 ```
 
 ---
+
+## Insert a New Record Into a Collection
+To insert a new record into our `artist` collection, we create a JSON object and reference the collection in the `db` method:
+
+```bash
+db.artist.insert({"artist_name": "Mogwai"})
+```
+
+---
