@@ -365,7 +365,7 @@ db.artist.insert([
 
 ## Retrieve All Rows in a Collection
 
-```bash
+```js
 db.artist.find()
 ```
 
@@ -373,7 +373,7 @@ db.artist.find()
 
 ## Retrieve All Rows in a Collection Using `pretty`
 
-```bash
+```js
 db.artist.find().pretty()
 ```
 
