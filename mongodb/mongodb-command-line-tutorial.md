@@ -132,7 +132,7 @@ db.getName()
 
 ---
 
-## Get Help on the Database
+## Get Help
 You can get general help with Mongo:
 
 ```js
@@ -141,12 +141,23 @@ db.help()
 
 ---
 
-## Get Help on the Database
+## Get Help
 You can also get help specific to your database. For example, let’s look at the help files associated with the `test` database:
 
 ```js
 db.test.help()
 ```
+
+---
+
+## Get Help
+You can get a list of commands:
+
+```js
+db.listCommands()
+```
+
+And, `db.` + `TAB` will provide a listing of autocomplete options.
 
 ---
 
