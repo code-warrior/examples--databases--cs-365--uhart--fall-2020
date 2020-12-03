@@ -382,7 +382,7 @@ db.artist.find().pretty()
 ## Delete a Single Document in a Collection
 
 ```js
-db.artist.deleteOne({"artist_name": "Mogwai"})
+db.artist.deleteOne({"name": "Mogwai"})
 ````
 
 ---
