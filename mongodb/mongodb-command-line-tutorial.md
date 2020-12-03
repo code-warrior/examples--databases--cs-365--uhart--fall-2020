@@ -379,6 +379,22 @@ db.artist.find().pretty()
 
 ---
 
+## Delete a Single Document in a Collection
+
+```js
+db.artist.deleteOne({"artist_name": "Mogwai"})
+````
+
+---
+
+## Delete Everything in a Collection
+
+```js
+db.artist.deleteMany({})
+````
+
+---
+
 ## Exporting JSON Using `mongoexport`
 We use the bash-level command `mongoexport` to export our collections as JSON:
 
