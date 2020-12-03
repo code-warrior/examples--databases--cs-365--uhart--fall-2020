@@ -254,5 +254,24 @@ In this manner, you’ll be able to avoid using bracket syntax.
 
 ---
 
+## Remove a Collection
+We use `drop` to remove a collection. For instance, let’s drop the collections created in slides 19 and 24.
+
+```js
+db.artist.drop()
+```
+
+and
+
+```js
+db["the-artists"].drop()
+```
+
+---
+
+## Remove a Collection
+In both cases, Mongo should have responded with `true`.
+
+If you try to remove a collection that has already been removed, or one that never existed, Mongo will response with `false` to your `drop` statement.
 
 ---
