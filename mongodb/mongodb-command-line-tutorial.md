@@ -416,5 +416,3 @@ mongoimport \
 ```
 
 **Note**: If your JSON file has records with the same `ObjectID`, Mongo will reject the import.
-
----
