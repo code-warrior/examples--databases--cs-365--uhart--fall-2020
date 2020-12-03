@@ -159,6 +159,15 @@ use music
 
 ---
 
+## Drop a Database
+To drop a database, we first need to place focus on the database we wish to delete, then use `dropDatabase()` method on the `db` object. Let’s drop the `music` database we just created:
+
+```js
+use music
+db.dropDatabase()
+```
+
+---
 ## Create a New Collection
 Use the `createCollection` function to create a collection. Let’s create an `artist` collection in our `music` database:
 
