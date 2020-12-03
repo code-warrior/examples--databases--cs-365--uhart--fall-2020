@@ -254,6 +254,5 @@ In this manner, you’ll be able to avoid using bracket syntax.
 
 ---
 
-**Note**: The `test` database will now show if you type `show dbs`.
 
 ---
