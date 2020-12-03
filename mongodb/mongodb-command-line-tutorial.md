@@ -70,7 +70,7 @@ Type `CNTRL + C` or `exit` to get out.
 
 ---
 
-## Clear the Screen
+## Clearing the Screen
 ```bash
 CNTL + L
 ```
