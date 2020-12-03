@@ -201,3 +201,59 @@ db.artist.insert({"artist_name": "Mogwai"})
 ```
 
 ---
+
+## Important Note About Dashes in MongoDB
+Before we continue, let’s discuss how dashes are dealt with by Mongo. If, instead of naming our collection `artist` we had named it `the-artists`, then the dash would cause us problems when carrying out inserts. Creating the collection with a name of `the-artists`, however, won’t cause a problem.
+
+---
+
+## Important Note About Dashes in MongoDB
+Let’s create a collection called `the-artists`:
+
+```js
+db.createCollection(`the-artists`)
+```
+
+---
+
+## Important Note About Dashes in MongoDB
+Now, let’s try to insert a new record into the `the-artists` collection using the syntax we used in slide 22.
+
+```js
+db.the-artists.insert({"artist_name": "Interpol"})
+```
+
+---
+
+## Important Note About Dashes in MongoDB
+Mongo responds with an error. This is because we cannot reference the collection using that syntax.
+
+---
+
+## Important Note About Dashes in MongoDB
+When using dashes in collection names, you’ll need to refer to the collection using bracket syntax.
+
+For example, to insert a new record into `the-artists` collection, we require either of the following syntaxes:
+
+```js
+db['the-artists'].insert({"artist_name": "Interpol"})
+db["the-artists"].insert({"artist_name": "Interpol"})
+db[`the-artists`].insert({"artist_name": "Interpol"})
+```
+
+---
+
+## Important Note About Dashes in MongoDB
+To avoid these dash-related problems, avoid dashes and use camel case instead. For example, use `theArtists` instead of `the-artists`:
+
+```js
+db.theArtists.insert({"artist_name": "Interpol"})
+```
+
+In this manner, you’ll be able to avoid using bracket syntax.
+
+---
+
+**Note**: The `test` database will now show if you type `show dbs`.
+
+---
