@@ -304,6 +304,16 @@ In both cases, Mongo should have responded with `true`.
 If you try to remove a collection that has already been removed, or one that never existed, Mongo will response with `false` to your `drop` statement.
 
 ---
+
+## Recreate the `artist` Collection
+Let’s create the `artist` collection:
+
+```js
+use music
+db.createCollection(`artist`)
+```
+
+---
 ## Exporting JSON Using `mongoexport`
 We use the bash-level command `mongoexport` to export our collections as JSON:
 
