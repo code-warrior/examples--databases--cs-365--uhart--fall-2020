@@ -304,3 +304,30 @@ In both cases, Mongo should have responded with `true`.
 If you try to remove a collection that has already been removed, or one that never existed, Mongo will response with `false` to your `drop` statement.
 
 ---
+## Exporting JSON Using `mongoexport`
+We use the bash-level command `mongoexport` to export our collections as JSON:
+
+```bash
+mongoexport \
+  --collection=artist \
+  --db=music \
+  --out=music.json
+```
+
+**Note**: The back slashes invoke bash’s line-folding feature. If your CLI doesn’t support this feature, write the entire command on one line, sans slashes.
+
+---
+
+## Exporting JSON Using `mongoexport`
+The command is self-explanatory, but it’s worth noting that the value to `out` is the final JSON file we want.
+
+```bash
+mongoexport \
+  --collection=artist \
+  --db=music \
+  --out=music.json
+```
+
+**Note**: If you want to fully replicate a database, use `mongodump` to export the database, and `mongorestore` to restore the dump.
+
+---
