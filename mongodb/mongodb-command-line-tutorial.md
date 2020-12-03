@@ -168,6 +168,15 @@ db.dropDatabase()
 ```
 
 ---
+
+## Create the Music Database Again
+
+```js
+use music
+```
+
+---
+
 ## Create a New Collection
 Use the `createCollection` function to create a collection. Let’s create an `artist` collection in our `music` database:
 
