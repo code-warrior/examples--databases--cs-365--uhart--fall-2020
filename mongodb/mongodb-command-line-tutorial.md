@@ -314,6 +314,53 @@ db.createCollection(`artist`)
 ```
 
 ---
+
+## Insert a New Nested Record Into a Collection
+When populating Mongo, it’s crucial to format, organize, and validate your JSON _before_ inserting any records into your collection.
+
+---
+
+## Insert a New Nested Record Into a Collection
+In the following example, I’m introducing two albums and two artists into our collection using two different key-value methods.
+
+---
+
+## Insert a New Nested Record Into a Collection
+
+```js
+db.artist.insert([
+  {
+    "name": "Mogwai",
+    "albums": [{
+      "Young Team": [
+        {"track": ["Yes! I Am a Long Way from Home", 357]},
+        {"track": ["Katrien", 324]}]
+    },
+    {
+      "Every Country’s Sun": [{
+        "Coolverine": 377,
+        "Don’t Believe the Fife": 384
+      }]
+    }]
+  },
+  {
+    "name": "Interpol",
+    "albums": [{
+      "Turn on the Bright Lights": [
+        {"track": ["Untitled", 237]},
+        {"track": ["Obstacle 1", 251]}]
+    },
+    {
+      "Maurader": [{
+        "The Rover": 218,
+        "It Probably Matters": 248
+      }]
+    }]
+  },
+])
+```
+
+---
 ## Exporting JSON Using `mongoexport`
 We use the bash-level command `mongoexport` to export our collections as JSON:
 
