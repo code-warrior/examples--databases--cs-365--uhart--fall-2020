@@ -331,3 +331,19 @@ mongoexport \
 **Note**: If you want to fully replicate a database, use `mongodump` to export the database, and `mongorestore` to restore the dump.
 
 ---
+
+## Exporting CSV Using `mongoexport`
+You can also export collections as a CSV file. You’ll need to use the `type` _and_ `fields` flags:
+
+```bash
+mongoexport \
+  --collection=artist \
+  --db=music \
+  --type=csv \
+  --fields=artist_name \
+  --out=music.csv
+```
+
+All the collections in your database won’t automatically be exported. You’ll need to specify the fields you want as a comma-separated list of values to the `field` flag.
+
+---
