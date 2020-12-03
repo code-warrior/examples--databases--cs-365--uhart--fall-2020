@@ -361,6 +361,24 @@ db.artist.insert([
 ```
 
 ---
+
+
+## Retrieve All Rows in a Collection
+
+```bash
+db.artist.find()
+```
+
+---
+
+## Retrieve All Rows in a Collection Using `pretty`
+
+```bash
+db.customers.find().pretty()
+```
+
+---
+
 ## Exporting JSON Using `mongoexport`
 We use the bash-level command `mongoexport` to export our collections as JSON:
 
