@@ -347,3 +347,17 @@ mongoexport \
 All the collections in your database won’t automatically be exported. You’ll need to specify the fields you want as a comma-separated list of values to the `field` flag.
 
 ---
+
+## Importing JSON Using `mongoimport`
+Use `mongoimport` to import a JSON file:
+
+```bash
+mongoimport \
+  --db=music \
+  --collection=artist \
+  --file=music.json
+```
+
+**Note**: If your JSON file has records with the same `ObjectID`, Mongo will reject the import.
+
+---
